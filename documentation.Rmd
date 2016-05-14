@@ -1,0 +1,33 @@
+---
+title: "Graphically representing the properties of the option contracts"
+output: html_document
+---
+
+The aim of this app is to show how the price of an option is influenced by the variables determining its price. There are five basic parameters that form the price of an European (exercised only at maturity) option, on a stock that is not paying dividends. This is the simplest case and is used for learning purposes. The variables are the price of the underlying asset, the strike price, the interest rate, the volatility or the standard deviation of the underlying asset and finally the time to expiration. The different facets of the options are shown in six separate tabs. Information about both call and put options is provided. The pricing is based on the famous Black-Scholes formula. 
+
+## First Tab. Rendering the prices 
+
+Here a simple calculation of the respective prices is rendered. Also illustated is the so called put-call parity. It can be seen that this identity always holds when the prices obey the Black-Scholes formula and in the absence of arbitrage opportunities.
+
+## Second Tab. The famous profit plot
+
+Four profit plots are rendered here, with the price of call and put option computed according to the Balck-Scholes formula. So, four plots for each short and long position on call and put prices. The plots illustrate how the profit of the holder of an option, or the one that short it can evolve in respect of the changes of the price of the underlying asset. By varying each variable it could be seen how the four positions change. In that way we can gain understanding about the dynamics of an option contract
+
+## Third Tab. Sensitivity I (concered with Stock and Strike Prices)
+
+Here it can be seen how an option price depends on the price of the unerlying asset and the designated strike price. Both call and put options are considered. It could be seen that the option price only gradually changes, as opposed to the profit plot for example. Again, by varying different parameters one could see how the prices of the respective options change.
+
+## Fourth Tab. Sensitivity II (concerned with the volatility, interest rate and time)
+
+Here, the relations of the remaining three variables with the option price could be seen. Again, by varing for example volatility it could be seen what the effects are. Looking on the same page with all variable is also beneficial, since it gives an overall picture of the cause and effect. It is interesting to see that call and put options are not exactly symmetric--for example the volatility affects the two types of option somewhat differently. 
+
+## Fifth Tab. The Greeks I (Delta, gamma and vega)
+
+Here plots for the so called greek letters are rendered. The greek letters in general are the first derivatives of the price of an option with respect to the each of the parameters.
+It could be seen again how when the price of the underlying changes, what happens to delta(first derivative with respect to underlying asset), gamma(second derivative with respect to underlying asset) and vega(first derivative with respect to volatility). 
+
+## Sixed Tab. The Greeks II (Rho and theta)
+
+Simirarly, The plots of rho(first derivative with respect to interest rate) and theta(first derivatives with respect to time) are shown here. By varying the basic parameters it could be seen what effect it has on the selected greeks. 
+
+### For more information the [Website of prof. J.C. Hull](http://www-2.rotman.utoronto.ca/~hull/)
